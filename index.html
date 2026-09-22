@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manoharan CA — Creative Tech & Digital Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Manoharan CA — Social Media Manager, Prompt Engineer, Digital Marketing Strategist, and Data Analytics Specialist." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Canvas for interactive background particles -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Ambient Glow Orbs -->
+  <div class="orb orb-1" aria-hidden="true"></div>
+  <div class="orb orb-2" aria-hidden="true"></div>
+  <div class="orb orb-3" aria-hidden="true"></div>
+  <div class="orb orb-4" aria-hidden="true"></div>
+
+  <!-- ── NAVIGATION ── -->
+  <nav id="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-container">
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <a href="#contact" class="nav-cta">
+            <span>Hire Me</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <button id="hamburger" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── MAIN CONTENT ── -->
+  <main>
+
+    <!-- ── HERO SECTION ── -->
+    <section id="hero" class="hero-section">
+      <div class="hero-container">
+        <div id="hero-left" class="hero-left">
+          <div class="hero-greeting">
+            <span class="greeting-badge">
+              <span class="greeting-dot"></span>
+              <span class="greeting-text" id="greeting-text">HELLO, I AM</span>
+              <span class="greeting-cursor">_</span>
+            </span>
+          </div>
+          <h1 class="hero-name"><span class="name-white">Manoharan</span> <span class="name-cyan">CA</span></h1>
+          <div class="hero-subtitle">Social Media Manager | Digital Professional</div>
+          <p class="hero-desc">
+            Passionate digital strategist blending social media growth, prompt engineering, generative AI workflows, and
+            data-driven marketing analytics to craft compelling online narratives and scale digital influence.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn-primary">
+              <span>View Projects</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn-secondary">
+              <span>Let's Connect</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Stat Cards -->
+          <div class="stat-cards">
+            <div class="stat-card" id="stat-card-1">
+              <div class="stat-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="stat-info">
+                <span class="stat-num">0+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                  </polygon>
+                </svg>
+              </div>
+              <div class="stat-info">
+                <span class="stat-num">50+</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div class="stat-info">
+                <span class="stat-num">250K+</span>
+                <span class="stat-label">Audience Reach</span>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                  <polyline points="17 6 23 6 23 12"></polyline>
+                </svg>
+              </div>
+              <div class="stat-info">
+                <span class="stat-num">98%</span>
+                <span class="stat-label">Success Rate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column / Portrait -->
+        <div id="hero-right" class="hero-right">
+          <div class="portrait-wrapper">
+            <div class="portrait-ring" aria-hidden="true"></div>
+
+            <div class="portrait-card float-anim">
+              <div class="portrait-inner">
+                <div class="portrait-avatar">
+                  <img src="images/manoharan.png" alt="Manoharan CA" class="portrait-img" />
+                </div>
+                <div class="portrait-line-accent"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ── ABOUT SECTION ── -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left Column -->
+          <div class="reveal-up">
+            <span class="section-label">ABOUT ME</span>
+            <h2 class="section-heading">
+              Pioneering the Future of <span class="text-cyan">Digital Growth</span>
+            </h2>
+            <div class="orange-underline"></div>
+            <p class="about-desc">
+              I am a results-oriented digital professional operating at the intersection of creative storytelling,
+              artificial intelligence, and analytical precision. With an agile mindset, I engineer strategic campaigns
+              that don't just capture attention—they convert.
+            </p>
+            <p class="about-desc" style="margin-top: 16px;">
+              From architecting complex prompt workflows that automate high-value production to orchestrating
+              comprehensive multi-channel social media systems and mining performance metrics, my mission is to empower
+              brands to stand out boldly in today's fast-evolving technological landscape.
+            </p>
+          </div>
+
+          <!-- Right Column: 6 Feature Cards -->
+          <div class="about-cards-grid reveal-up">
+            <div class="feature-card">
+              <div class="fc-icon fc-icon-cyan" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                  </path>
+                </svg>
+              </div>
+              <div class="fc-title">Social Media Mastery</div>
+              <div class="fc-desc">Content calendars, high-retention reel pacing, organic reach, and vibrant community
+                building across platforms.</div>
+            </div>
+
+            <div class="feature-card">
+              <div class="fc-icon fc-icon-purple" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83">
+                  </path>
+                </svg>
+              </div>
+              <div class="fc-title">Prompt Engineering</div>
+              <div class="fc-desc">Crafting tailored chain-of-thought prompts for LLMs to generate high-fidelity copy,
+                code, and analytical breakdowns.</div>
+            </div>
+
+            <div class="feature-card">
+              <div class="fc-icon fc-icon-blue" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <div class="fc-title">Data &amp; Web Analytics</div>
+              <div class="fc-desc">Unpacking GA4 metrics, tracking conversion funnels, CAC/LTV insights, and crafting
+                intuitive dashboards.</div>
+            </div>
+
+            <div class="feature-card">
+              <div class="fc-icon fc-icon-orange" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div class="fc-title">AI Creative Suite</div>
+              <div class="fc-desc">Leveraging generative art, video synthesis, AI avatars, and vocal models to pioneer
+                innovative media assets.</div>
+            </div>
+
+            <div class="feature-card">
+              <div class="fc-icon fc-icon-cyan" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M16 12l-4-4-4 4M12 16V8"></path>
+                </svg>
+              </div>
+              <div class="fc-title">Growth Marketing</div>
+              <div class="fc-desc">Targeted paid ad optimization, SEO strategy, email nurture flows, and continuous A/B
+                test experiments.</div>
+            </div>
+
+            <div class="feature-card">
+              <div class="fc-icon fc-icon-purple" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="fc-title">Workflow Automation</div>
+              <div class="fc-desc">Automating repetitive marketing and data pipelines using Zapier, Make, Python
+                scripts, and API integrations.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ── SKILLS SECTION ── -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="skills-header reveal-up">
+          <div>
+            <span class="section-label">EXPERTISE</span>
+            <h2 class="section-heading">
+              Technical &amp; Creative <span class="text-cyan">Toolkit</span>
+            </h2>
+            <div class="orange-underline"></div>
+          </div>
+          <p class="skills-desc">
+            A versatile arsenal of modern platforms, AI frameworks, and analytics tools to supercharge projects from
+            strategy to execution.
+          </p>
+        </div>
+
+        <!-- 14 Skill Tiles (7 per row on desktop) -->
+        <div class="skills-grid reveal-up">
+          <div class="skill-tile">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#818CF8" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </div>
+            <span>Meta Business</span>
+          </div>
+
+          <div class="skill-tile">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <span>Google Analytics</span>
+          </div>
+
+          <div class="skill-tile">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A78BFA" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+            </div>
+            <span>Prompt Eng.</span>
+          </div>
+
+          <div class="skill-tile">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#818CF8" stroke-width="2">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <span>Python Scripting</span>
+          </div>
+
+          <div class="skill-tile">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
+            </div>
+            <span>Midjourney AI</span>
+          </div>
+
+          <div class="skill-tile">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 14 14"></polyline>
+              </svg>
+            </div>
+            <span>Canva Pro</span>
+          </div>
+
+          <div class="skill-tile">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A78BFA" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
+            <span>SEO &amp; SEM</span>
+          </div>
+
+          <div class="skill-tile">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#818CF8" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <span>Notion Ops</span>
+          </div>
+
+          <div class="skill-tile">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </div>
+            <span>Video Synthesis</span>
+          </div>
+
+          <div class="skill-tile">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FBBF24" stroke-width="2">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <span>SQL &amp; Data</span>
+          </div>
+
+          <div class="skill-tile">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#818CF8" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </div>
+            <span>LinkedIn Growth</span>
+          </div>
+
+          <div class="skill-tile">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F472B6" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </div>
+            <span>Instagram Ops</span>
+          </div>
+
+          <div class="skill-tile">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </div>
+            <span>Automation APIs</span>
+          </div>
+
+          <div class="skill-tile">
+            <div class="skill-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2">
+                <path
+                  d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                </path>
+              </svg>
+            </div>
+            <span>Digital Ads ROI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ── EXPERIENCE SECTION ── -->
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <div class="experience-grid">
+          <!-- Left Column -->
+          <div class="reveal-up">
+            <span class="section-label">CAREER JOURNEY</span>
+            <h2 class="section-heading">
+              Experience &amp; <span class="text-cyan">Milestones</span>
+            </h2>
+            <div class="orange-underline"></div>
+            <p class="exp-desc">
+              Demonstrated track record of scaling digital communities, engineering AI workflows, and delivering
+              tangible ROI across diverse brands.
+            </p>
+          </div>
+
+          <!-- Right Column: Timeline -->
+          <div class="timeline reveal-up">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+              <div class="timeline-node" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <div class="exp-header">
+                  <div class="exp-info">
+                    <span class="exp-date">2023 — PRESENT</span>
+                    <h3 class="exp-role">Lead Digital Strategist &amp; Social Media Lead</h3>
+                    <span class="exp-company">GrowthMatrix Agency / Freelance</span>
+                  </div>
+                  <div class="exp-logo-badge" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#21DCF6" stroke-width="2">
+                      <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                      <polyline points="2 17 12 22 22 17"></polyline>
+                      <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                  </div>
+                </div>
+                <ul class="exp-bullets">
+                  <li>Orchestrated full-spectrum content production, boosting collective organic reach by 240% across
+                    Instagram and LinkedIn channels.</li>
+                  <li>Integrated generative AI pipelines (prompt engineering, automated copywriting, visual synthesis)
+                    cutting delivery turnaround by 60%.</li>
+                  <li>Designed analytical KPI dashboards to monitor post retention, audience demographics, and
+                    cost-per-lead attribution.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-divider"></div>
+
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item">
+              <div class="timeline-node" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <div class="exp-header">
+                  <div class="exp-info">
+                    <span class="exp-date">2022 — 2023</span>
+                    <h3 class="exp-role">Data &amp; Digital Marketing Specialist</h3>
+                    <span class="exp-company">DigitalPulse Media Solutions</span>
+                  </div>
+                  <div class="exp-logo-badge" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#148DFF" stroke-width="2">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                  </div>
+                </div>
+                <ul class="exp-bullets">
+                  <li>Supervised paid multi-channel ad funnels and audited web behavior with Google Analytics 4,
+                    improving customer conversion rates by 35%.</li>
+                  <li>Formulated structured prompt templates for rapid ad copy iterations, A/B audience testing, and
+                    automated SEO copy generation.</li>
+                  <li>Spearheaded creative strategy for viral video reels that reached over 1.2M collective views.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-divider"></div>
+
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item">
+              <div class="timeline-node" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <div class="exp-header">
+                  <div class="exp-info">
+                    <span class="exp-date">2021 — 2022</span>
+                    <h3 class="exp-role">Social Media &amp; Content Executive</h3>
+                    <span class="exp-company">Apex Media Lab</span>
+                  </div>
+                  <div class="exp-logo-badge" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#BF45F5" stroke-width="2">
+                      <path
+                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+                <ul class="exp-bullets">
+                  <li>Managed day-to-day community engagement, direct responses, and scheduled social editorial
+                    calendars for 5 commercial client accounts.</li>
+                  <li>Produced weekly metric performance decks and trend reports to provide key stakeholders with
+                    data-backed insights.</li>
+                  <li>Coordinated graphic production for promotional campaigns, product launches, and seasonal digital
+                    activations.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ── PROJECTS SECTION ── -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="projects-header reveal-up">
+          <div>
+            <span class="section-label">FEATURED WORK</span>
+            <h2 class="section-heading">
+              Curated <span class="text-cyan">Projects</span>
+            </h2>
+            <div class="orange-underline"></div>
+          </div>
+          <p class="projects-desc">
+            A showcase of digital campaigns, AI automation systems, and data-driven marketing products designed for high
+            performance.
+          </p>
+        </div>
+
+        <!-- 5 Project Cards -->
+        <div class="projects-grid reveal-up">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="proj-brand-area">
+              <div class="proj-brand-icon" style="background: linear-gradient(135deg, #6366F1, #38BDF8);">
+                <span class="proj-brand-text">M-GYM</span>
+              </div>
+            </div>
+            <h3 class="proj-title">Mano Fitness Club</h3>
+            <span class="proj-subtitle">Branding &amp; Acquisition Funnel</span>
+            <p class="proj-desc">
+              Holistic digital branding, personal training campaign, and local client acquisition pipeline that
+              increased new gym memberships by 70%.
+            </p>
+            <a href="#contact" class="proj-btn">
+              <span>Explore Case</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="proj-brand-area">
+              <div class="proj-brand-icon" style="background: linear-gradient(135deg, #8B5CF6, #6366F1);">
+                <span class="proj-brand-text">AI-PRM</span>
+              </div>
+            </div>
+            <h3 class="proj-title">PromptGen Studio</h3>
+            <span class="proj-subtitle">Prompt Engineering Framework</span>
+            <p class="proj-desc">
+              Engineered structured modular prompt matrices for multi-persona marketing copy generation, SEO research,
+              and automated customer responses.
+            </p>
+            <a href="#contact" class="proj-btn">
+              <span>Explore Case</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="proj-brand-area">
+              <div class="proj-brand-icon" style="background: linear-gradient(135deg, #10B981, #059669);">
+                <span class="proj-brand-text">CANVA</span>
+              </div>
+            </div>
+            <h3 class="proj-title">Bulk Creative Creator</h3>
+            <span class="proj-subtitle">Automated Design Engine</span>
+            <p class="proj-desc">
+              Automated social banner pipeline connecting spreadsheet data with high-res creative templates to deliver
+              500+ graphics in under 10 minutes.
+            </p>
+            <a href="#contact" class="proj-btn">
+              <span>Explore Case</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card">
+            <div class="proj-brand-area">
+              <div class="proj-brand-icon" style="background: linear-gradient(135deg, #0284C7, #38BDF8);">
+                <span class="proj-brand-text">ANLYT</span>
+              </div>
+            </div>
+            <h3 class="proj-title">OmniChannel Dashboard</h3>
+            <span class="proj-subtitle">GA4 &amp; Social Analytics</span>
+            <p class="proj-desc">
+              Unified cross-channel tracking board aggregating real-time metrics across Meta, LinkedIn, and GA4 to
+              pinpoint true ROI and drop-off points.
+            </p>
+            <a href="#contact" class="proj-btn">
+              <span>Explore Case</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card">
+            <div class="proj-brand-area">
+              <div class="proj-brand-icon" style="background: linear-gradient(135deg, #7C3AED, #A855F7);">
+                <span class="proj-brand-text">AVTR</span>
+              </div>
+            </div>
+            <h3 class="proj-title">AI Avatar Lab</h3>
+            <span class="proj-subtitle">Generative AI Video &amp; Voice</span>
+            <p class="proj-desc">
+              Synthesized hyper-realistic brand ambassadors and multilingual training avatars using state-of-the-art
+              diffusion and speech models.
+            </p>
+            <a href="#contact" class="proj-btn">
+              <span>Explore Case</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ── EDUCATION SECTION ── -->
+    <section id="education" class="education-section">
+      <div class="container">
+        <div class="edu-header reveal-up">
+          <span class="section-label">BACKGROUND</span>
+          <h2 class="section-heading">
+            Academic <span class="text-cyan">Foundation</span>
+          </h2>
+          <div class="orange-underline"></div>
+        </div>
+
+        <div class="edu-content reveal-up">
+          <div class="edu-card">
+            <div class="edu-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#148DFF" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div class="edu-info">
+              <h3 class="edu-degree">Bachelor's in Computer Applications / Technology</h3>
+              <p class="edu-college">Information Systems &amp; Digital Media</p>
+              <span class="edu-year">Graduated with Academic Honors</span>
+            </div>
+          </div>
+
+          <div class="edu-quote-area">
+            <span class="handwritten-quote hw-edu">
+              "Continuous learning is the catalyst that transforms curiosity into expertise."
+            </span>
+            <div class="edu-quote-line"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- ── CONTACT SECTION ── -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Left Column -->
+          <div class="reveal-up">
+            <span class="section-label">GET IN TOUCH</span>
+            <h2 class="section-heading">
+              Let's Build Something <span class="text-cyan">Extraordinary</span>
+            </h2>
+            <div class="orange-underline"></div>
+            <p class="contact-desc">
+              Have an ambitious brand campaign, AI transformation project, or marketing role in mind? Reach out today
+              and let's craft something remarkable together.
+            </p>
+          </div>
+
+          <!-- Middle Column: Contact Info Card -->
+          <div class="contact-card reveal-up">
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#818CF8" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-label">EMAIL ADDRESS</span>
+                <a href="mailto:manoharanca15@gmail.com" class="contact-value">manoharanca15@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-divider"></div>
+
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#818CF8" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-label">LOCATION</span>
+                <span class="contact-value">Tamil Nadu, India (Open to Remote Worldwide)</span>
+              </div>
+            </div>
+
+            <div class="contact-divider"></div>
+
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#818CF8" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-label">AVAILABILITY</span>
+                <span class="contact-value">Immediate • Freelance &amp; Full-Time</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Social Links & Handwritten callout -->
+          <div class="contact-right reveal-up">
+            <div class="handwritten-social">
+              <span class="hw-contact">Connect with me online ✦</span>
+            </div>
+
+            <div class="social-icons">
+              <!-- GitHub -->
+              <a href="https://github.com/ManoHaran-CA" target="_blank" rel="noopener noreferrer" class="social-btn"
+                aria-label="GitHub Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#818CF8" stroke-width="2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/manoharan-ca-1015mm?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#818CF8" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/_mano_ca?stkn=anR3Nzkydzh4aHFo&utm_source=qr" target="_blank"
+                rel="noopener noreferrer" class="social-btn" aria-label="Instagram Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#818CF8" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+
+              <!-- Email Direct -->
+              <a href="mailto:manoharanca15@gmail.com" class="social-btn" aria-label="Send Email">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#818CF8" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="logo-mark" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="34" height="34" rx="8" fill="url(#footer-logo-grad)" />
+            <path d="M9 25V9L17 19L25 9V25" stroke="#08090D" stroke-width="2.6" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <defs>
+              <linearGradient id="footer-logo-grad" x1="0" y1="0" x2="34" y2="34" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#6366F1" />
+                <stop offset="1" stop-color="#38BDF8" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div>
+          <div class="footer-name">Manoharan CA</div>
+          <div class="footer-tagline">PORTFOLIO • 2026</div>
+        </div>
+      </div>
+
+      <div class="footer-quote-area">
+        <span class="handwritten-quote hw-footer">"Innovate with passion, create with purpose."</span>
+        <div class="footer-orange-line"></div>
+      </div>
+
+      <div class="footer-copy">
+        &copy; 2026 Manoharan CA. Built with modern web standards.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── BACK TO TOP BUTTON ── -->
+  <button id="backToTop" class="back-to-top" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
