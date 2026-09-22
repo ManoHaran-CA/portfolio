@@ -1012,6 +1012,13 @@ body {
   flex-shrink: 0;
 }
 
+.exp-badge-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: block;
+}
+
 .exp-bullets {
   list-style: none;
   display: flex;
@@ -1204,12 +1211,23 @@ body {
   width: 58px;
   height: 58px;
   border-radius: var(--radius);
-  background: #EFF6FF;
-  border: 1px solid #DBEAFE;
+  background: #0A3668;
+  border: 1px solid #1E4E8C;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(10, 54, 104, 0.15);
+}
+
+.edu-icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: inherit;
+  padding: 3px;
 }
 
 .edu-info {
