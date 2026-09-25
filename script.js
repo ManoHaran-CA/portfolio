@@ -224,7 +224,7 @@
 
 // ── SKILL TILE STAGGER ───────────────────────────────────
 (function initSkillStagger() {
-  const tiles = document.querySelectorAll('.skill-tile');
+  const tiles = document.querySelectorAll('.core-skill-card, .skill-tile');
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) {
@@ -232,7 +232,7 @@
           setTimeout(() => {
             tile.style.opacity = '1';
             tile.style.transform = 'translateY(0) scale(1)';
-          }, i * 60);
+          }, i * 70);
         });
         io.disconnect();
       }
@@ -241,11 +241,11 @@
 
   tiles.forEach(tile => {
     tile.style.opacity = '0';
-    tile.style.transform = 'translateY(20px) scale(0.95)';
-    tile.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+    tile.style.transform = 'translateY(20px) scale(0.96)';
+    tile.style.transition = 'opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1)';
   });
 
-  const grid = document.querySelector('.skills-grid');
+  const grid = document.querySelector('.core-skills-grid, .skills-grid');
   if (grid) io.observe(grid);
 })();
 
