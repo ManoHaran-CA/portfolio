@@ -264,46 +264,7 @@
 })();
 
 
-// ── TYPEWRITER EFFECT ───────────────────────────────────
-(function initTypewriter() {
-  const el = document.querySelector('.hero-typewriter-role');
-  if (!el) return;
 
-  const roles = [
-    'Digital Marketing',
-    'AI Creative Production',
-    'UI/UX',
-    'Front-End Development',
-    'Team Leadership',
-    'Generative AI Creative Technologist'
-  ];
-
-  let rIdx = 0, cIdx = roles[0].length, deleting = true;
-
-  function type() {
-    const role = roles[rIdx];
-    if (!deleting) {
-      cIdx++;
-      el.textContent = role.slice(0, cIdx);
-      if (cIdx === role.length) {
-        deleting = true;
-        setTimeout(type, 1800);
-        return;
-      }
-    } else {
-      cIdx--;
-      el.textContent = role.slice(0, cIdx);
-      if (cIdx === 0) {
-        deleting = false;
-        rIdx = (rIdx + 1) % roles.length;
-      }
-    }
-    setTimeout(type, deleting ? 35 : 70);
-  }
-
-  // Initial pause before switching from the first role
-  setTimeout(type, 2000);
-})();
 
 
 // ── GREETING TYPEWRITER ANIMATION ────────────────────────
