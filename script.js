@@ -264,25 +264,27 @@
 })();
 
 
-// ── TYPEWRITER EFFECT (hero subtitle) ───────────────────
+// ── TYPEWRITER EFFECT ───────────────────────────────────
 (function initTypewriter() {
-  const roles = [
-    'Social Media Manager',
-    'Prompt Engineering',
-    'Digital Marketing & Analytics',
-    'Data Analytics Expert',
-    'AI Creative Producer'
-  ];
-  const el = document.querySelector('.hero-subtitle');
+  const el = document.querySelector('.hero-typewriter-role');
   if (!el) return;
 
-  let rIdx = 0, cIdx = 0, deleting = false;
+  const roles = [
+    'Digital Marketing',
+    'AI Creative Production',
+    'UI/UX',
+    'Front-End Development',
+    'Team Leadership',
+    'Generative AI Creative Technologist'
+  ];
+
+  let rIdx = 0, cIdx = roles[0].length, deleting = true;
 
   function type() {
     const role = roles[rIdx];
     if (!deleting) {
       cIdx++;
-      el.textContent = role.slice(0, cIdx) + ' | Digital Professional';
+      el.textContent = role.slice(0, cIdx);
       if (cIdx === role.length) {
         deleting = true;
         setTimeout(type, 1800);
@@ -290,23 +292,17 @@
       }
     } else {
       cIdx--;
-      el.textContent = role.slice(0, cIdx) + ' | Digital Professional';
+      el.textContent = role.slice(0, cIdx);
       if (cIdx === 0) {
         deleting = false;
         rIdx = (rIdx + 1) % roles.length;
       }
     }
-    setTimeout(type, deleting ? 40 : 75);
+    setTimeout(type, deleting ? 35 : 70);
   }
 
-  // Delay start until visible
-  const io = new IntersectionObserver(entries => {
-    if (entries[0].isIntersecting) {
-      setTimeout(type, 1500);
-      io.disconnect();
-    }
-  }, { threshold: 0.5 });
-  io.observe(el);
+  // Initial pause before switching from the first role
+  setTimeout(type, 2000);
 })();
 
 

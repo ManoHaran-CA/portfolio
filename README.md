@@ -1,9 +1,14 @@
-# Manoharan CA — Creative Tech & Digital Portfolio
+# Generative AI Creative Technologist Portfolio — Manoharan CA
 
-Personal portfolio website for Manoharan CA — Social Media Manager, Prompt Engineer, Digital Marketing Strategist, and Data Analytics Specialist.
+Portfolio website for Manoharan CA — Generative AI Creative Technologist specializing in AI-Powered Marketing, Creative Production, UI/UX, Front-End Development, and Team Leadership.
+
+## Professional Branding
+- **Role:** Generative AI Creative Technologist
+- **Portfolio Subtitle:** AI-Powered Marketing, Creative Production, UI/UX and Digital Experiences
+- **Core Pillars:** Digital Marketing • AI Creative Production • UI/UX • Front-End Development • Team Leadership
 
 ## Features
-- Interactive dark-themed aesthetic with ambient glow effects and particle animations
+- Interactive modern light aesthetic with glassmorphism, accent glows, and interactive particles
 - Showcase of professional skills, experience, projects, and certifications
 - Responsive design for mobile, tablet, and desktop devices
 - Contact form and direct interaction links

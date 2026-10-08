@@ -158,10 +158,12 @@ body {
 }
 
 @keyframes orbFloat {
+
   0%,
   100% {
     transform: translateY(0) scale(1);
   }
+
   50% {
     transform: translateY(-35px) scale(1.06);
   }
@@ -440,6 +442,7 @@ body {
     transform: scale(0.8);
     opacity: 1;
   }
+
   100% {
     transform: scale(2.4);
     opacity: 0;
@@ -465,10 +468,12 @@ body {
 }
 
 @keyframes blinkCursor {
+
   0%,
   49% {
     opacity: 1;
   }
+
   50%,
   100% {
     opacity: 0;
@@ -481,7 +486,7 @@ body {
   font-size: clamp(34px, 4.2vw, 58px);
   line-height: 1.1;
   letter-spacing: -0.03em;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   white-space: nowrap;
 }
 
@@ -491,13 +496,181 @@ body {
   display: inline;
 }
 
+.hero-role-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  font-size: clamp(20px, 2.3vw, 28px);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--indigo) 60%, var(--purple) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+}
+
 .hero-subtitle {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 600;
-  font-size: clamp(15px, 1.4vw, 18px);
+  font-size: clamp(15px, 1.35vw, 18px);
   color: var(--text-sec);
-  line-height: 1.5;
+  line-height: 1.55;
   margin-bottom: 16px;
+}
+
+/* ── HERO TEXT ANIMATION ── */
+.hero-text-anim-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.hero-typewriter-box {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(37, 99, 235, 0.22);
+  border-radius: var(--radius-pill);
+  padding: 6px 18px 6px 8px;
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.08), 0 1px 3px rgba(0, 0, 0, 0.02);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.3s var(--ease);
+}
+
+.hero-typewriter-box:hover {
+  border-color: rgba(37, 99, 235, 0.45);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.15);
+  transform: translateY(-1px);
+}
+
+.tw-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(37, 99, 235, 0.09);
+  color: var(--primary);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.tw-pulse-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--primary);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--primary);
+  animation: pulseDot 2s infinite ease-in-out;
+}
+
+@keyframes pulseDot {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.35);
+    opacity: 0.55;
+  }
+}
+
+.hero-typewriter-role {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: clamp(14px, 1.35vw, 17px);
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+  min-height: 24px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  margin-left: 2px;
+  color: var(--primary);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  animation: blinkCursor 0.9s infinite ease-in-out;
+}
+
+@keyframes blinkCursor {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Continuous Animated Ticker Ribbon */
+.hero-ticker-wrap {
+  width: 100%;
+  max-width: 540px;
+  overflow: hidden;
+  position: relative;
+  padding: 4px 0;
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.ticker-track {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  width: max-content;
+  animation: tickerSlide 26s linear infinite;
+}
+
+.hero-ticker-wrap:hover .ticker-track {
+  animation-play-state: paused;
+}
+
+@keyframes tickerSlide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.ticker-item {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-sec);
+  letter-spacing: 0.01em;
+  transition: all 0.2s ease;
+  padding: 2px 4px;
+}
+
+.ticker-item:hover {
+  color: var(--primary);
+  text-shadow: 0 0 10px rgba(37, 99, 235, 0.25);
+}
+
+.ticker-dot {
+  margin: 0 10px;
+  color: var(--primary-light);
+  font-size: 13px;
+  opacity: 0.7;
 }
 
 .hero-desc {
@@ -724,10 +897,12 @@ body {
 }
 
 @keyframes floatPortrait {
+
   0%,
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-8px);
   }
@@ -1694,6 +1869,14 @@ a.contact-value:hover {
 
   .hero-buttons {
     justify-content: center;
+  }
+
+  .hero-typewriter-box {
+    align-self: center;
+  }
+
+  .hero-ticker-wrap {
+    margin: 0 auto;
   }
 
   .stat-cards {
