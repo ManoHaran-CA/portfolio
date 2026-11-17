@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <rect width="100" height="100" rx="20" fill="url(#nl-grad)"/>
+  <defs>
+    <linearGradient id="nl-grad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EA580C"/>
+      <stop offset="1" stop-color="#F97316"/>
+    </linearGradient>
+  </defs>
+  <!-- European Globe & Navigation Compass -->
+  <circle cx="50" cy="50" r="26" stroke="#FFFFFF" stroke-width="4"/>
+  <ellipse cx="50" cy="50" rx="14" ry="26" stroke="#FFFFFF" stroke-width="3"/>
+  <line x1="24" y1="50" x2="76" y2="50" stroke="#FFFFFF" stroke-width="3"/>
+  <circle cx="50" cy="50" r="5" fill="#FFFFFF"/>
+</svg>

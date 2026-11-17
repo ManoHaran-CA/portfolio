@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <rect width="100" height="100" rx="20" fill="url(#benq-grad)"/>
+  <defs>
+    <linearGradient id="benq-grad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5A2D82"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  <!-- Consolidated CRM/ERP/E-Commerce Database & Sync -->
+  <ellipse cx="50" cy="30" rx="24" ry="9" stroke="#FFFFFF" stroke-width="3.5" fill="none"/>
+  <path d="M26 30 V48 C26 53 37 57 50 57 C63 57 74 53 74 48 V30" stroke="#FFFFFF" stroke-width="3.5" fill="none"/>
+  <path d="M26 48 V66 C26 71 37 75 50 75 C63 75 74 71 74 66 V48" stroke="#FFFFFF" stroke-width="3.5" fill="none"/>
+  <!-- Sync badge -->
+  <circle cx="70" cy="68" r="9" fill="#10B981"/>
+  <polyline points="66,68 69,71 74,65" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

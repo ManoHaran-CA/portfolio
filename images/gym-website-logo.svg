@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <rect width="100" height="100" rx="20" fill="url(#gym-grad)"/>
+  <defs>
+    <linearGradient id="gym-grad" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EA580C"/>
+      <stop offset="1" stop-color="#F97316"/>
+    </linearGradient>
+  </defs>
+  <!-- Fitness Dumbbell -->
+  <g transform="rotate(-45 50 50)">
+    <!-- Main Bar -->
+    <rect x="22" y="47" width="56" height="6" rx="3" fill="#FFFFFF"/>
+    <!-- Center Knurl Grip Highlights -->
+    <rect x="44" y="47.5" width="2" height="5" fill="#EA580C"/>
+    <rect x="49" y="47.5" width="2" height="5" fill="#EA580C"/>
+    <rect x="54" y="47.5" width="2" height="5" fill="#EA580C"/>
+    <!-- Left Inner Weight Plate -->
+    <rect x="33" y="27" width="8" height="46" rx="4" fill="#FFFFFF"/>
+    <!-- Left Outer Weight Plate -->
+    <rect x="24" y="33" width="7" height="34" rx="3.5" fill="#FFFFFF"/>
+    <!-- Left Collar Cap -->
+    <rect x="19" y="43" width="4" height="14" rx="2" fill="#FEF08A"/>
+    <!-- Right Inner Weight Plate -->
+    <rect x="59" y="27" width="8" height="46" rx="4" fill="#FFFFFF"/>
+    <!-- Right Outer Weight Plate -->
+    <rect x="69" y="33" width="7" height="34" rx="3.5" fill="#FFFFFF"/>
+    <!-- Right Collar Cap -->
+    <rect x="77" y="43" width="4" height="14" rx="2" fill="#FEF08A"/>
+  </g>
+  <!-- Dynamic Energy Sparks -->
+  <circle cx="28" cy="27" r="2.5" fill="#FEF08A"/>
+  <path d="M74 24 L76 27 L79 28 L76 29 L74 32 L72 29 L69 28 L72 27 Z" fill="#FFFFFF"/>
+</svg>
